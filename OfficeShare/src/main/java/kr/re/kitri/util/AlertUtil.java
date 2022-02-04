@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/** 1111111
  * alert, alertAndMovePage, and alertAndBackPage method reference
- * @see <a href="https://redcoder.tistory.com/195">[·ÎÀçÀÇ °³¹ß ÀÏ±â]</a>
+ * @see <a href="https://redcoder.tistory.com/195">[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½]</a>
  */
 public class AlertUtil {
 	
