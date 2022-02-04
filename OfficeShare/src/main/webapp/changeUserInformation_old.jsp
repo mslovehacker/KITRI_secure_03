@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>::: Share Office - Change Information of User :::</title>
+    <title>:::: Share Office - Change Information of User ::::</title>
 </head>
 
 <body>
