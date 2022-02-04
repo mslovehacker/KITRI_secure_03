@@ -4,7 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import kr.re.kitri.domain.BoardBean;
-import kr.re.kitri.domain.UserBean;
 
 /**
  * @see {@link kr.re.kitri.util.CommonDao CommonDao}
