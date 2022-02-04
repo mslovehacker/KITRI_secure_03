@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<!-- 안녕하세요~~~~ -->
+
 <%
     // 0: 인증 가능 사용자 및 비밀번호 목록.
     String[] users = { "happy", "apple", "subway" };
