@@ -83,10 +83,28 @@ function calendarDayMouseout(){
 			<div class="row"> 
 			     <div class="col-lg-10">
 			         <h1>
-			         <a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year}"/>&month=<c:out value="${searchVO.month-1}"/>', '')"><i class="fa fa-angle-left fa-fw"></i></a>
+			         <c:choose>
+				         <c:when test="${searchVO.month le 1}">
+				         	<a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year-1}"/>&month=<c:out value="${searchVO.month+11}"/>', '')"><i class="fa fa-angle-left fa-fw"></i></a>
+				         </c:when>
+				         <c:otherwise>
+				         	<a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year}"/>&month=<c:out value="${searchVO.month-1}"/>', '')"><i class="fa fa-angle-left fa-fw"></i></a>
+				         </c:otherwise>
+			         </c:choose>
+			         
+			         
 			         
 			         <c:out value="${searchVO.year}"/>년 <c:out value="${searchVO.month}"/>월
-			         <a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year}"/>&month=<c:out value="${searchVO.month+1}"/>', '')"><i class="fa fa-angle-right fa-fw"></i></a>
+			         
+					 <c:choose>
+				         <c:when test="${searchVO.month ge 12}">
+				         	<a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year+1}"/>&month=<c:out value="${searchVO.month-11}"/>', '')"><i class="fa fa-angle-right fa-fw"></i></a>
+				         </c:when>
+				         <c:otherwise>
+				         	<a href="#" onclick="fn_moveToURL('schList?year=<c:out value="${searchVO.year}"/>&month=<c:out value="${searchVO.month+1}"/>', '')"><i class="fa fa-angle-right fa-fw"></i></a>
+				         </c:otherwise>
+			         </c:choose>
+			         
 			         </h1>
 			     </div>
 			     <div class="col-lg-2">
